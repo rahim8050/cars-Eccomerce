@@ -7,6 +7,6 @@
     <title>contact</title>
 </head>
 <body>
-    
+    <img src="assets/past.jpg" alt="">
 </body>
 </html>
