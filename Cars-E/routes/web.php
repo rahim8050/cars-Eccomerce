@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,11 +20,12 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-Route::fallback(function () {
-    return view('404');
-})->name('404');
-Route::get('/sum{a}/{b}', function (float $a, float $b) {
-    return  $a + $b;
-})->whereNumber(['a', 'b']);
-Route::get('/cars', [CarController::class, 'car']);
- 
+// Route::fallback(function () {
+//     return view('404');
+// })->name('404');
+// Route::get('/sum{a}/{b}', function (float $a, float $b) {
+//     return  $a + $b;
+// })->whereNumber(['a', 'b']);
+// Route::post('/car', [CarController::class, 'index']);
+Route::get('/products', [ProductController::class, 'index']);
+

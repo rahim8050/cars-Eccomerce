@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
-    public function car(){
-        return 'This is the list of cars';
-    }
+   public function index(){
+       return 'This is the car index page';
+   }
 }
