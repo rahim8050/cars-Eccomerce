@@ -23,9 +23,9 @@ Route::get('/contact', function () {
 // Route::fallback(function () {
 //     return view('404');
 // })->name('404');
-// Route::get('/sum{a}/{b}', function (float $a, float $b) {
-//     return  $a + $b;
-// })->whereNumber(['a', 'b']);
+Route::get('/sum{a}/{b}', function (float $a, float $b) {
+     return  $a + $b;
+})->whereNumber(['a', 'b']);
 // Route::post('/car', [CarController::class, 'index']);
 Route::get('/products', [ProductController::class, 'index']);
 
