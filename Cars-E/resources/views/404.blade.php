@@ -1,4 +1,4 @@
-<!-- filepath: /home/rahim/Desktop/cars-Eccomerce/Cars-E/resources/views/404.blade.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
