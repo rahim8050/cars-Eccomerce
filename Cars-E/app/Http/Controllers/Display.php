@@ -11,7 +11,7 @@ class Display extends Controller
      */
     public function index()
     {
-        //
+       return view ("index.car");
     }
 
     /**
